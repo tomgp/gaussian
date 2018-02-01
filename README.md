@@ -3,11 +3,13 @@
 A JavaScript model of the [Normal](http://en.wikipedia.org/wiki/Normal_distribution)
 (or Gaussian) distribution.
 
+This is a fork for use with unpkg.com & so observablehq.com
+
 ## API
 
 ### Creating a Distribution
 ```javascript
-var gaussian = require('gaussian');
+var gaussian = require('@tomgp/gaussian');
 var distribution = gaussian(mean, variance);
 // Take a random sample using inverse transform sampling method.
 var sample = distribution.ppf(Math.random());
